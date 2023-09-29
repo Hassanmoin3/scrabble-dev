@@ -143,8 +143,7 @@ class Scrabble
     public function removeNonAlphaCharacters(string $string)
     {
         //skip non alpha chars
-        $cleanString = preg_replace('/[^a-zA-Z0-9]/', '', $string);
-        return $cleanString;
+        return preg_replace('/[^a-zA-Z0-9]/', '', $string);
     }
 
     /**
